@@ -14,7 +14,7 @@ import BookingsPage from './components/pages/BookingsPage.jsx';
 import BookingPage from './components/pages/BookingPage.jsx';
 import NotFound from './components/NotFound.jsx';
 
-axios.defaults.baseURL = 'https://concertplace-backend.onrender.com/';
+axios.defaults.baseURL = 'https://concertplace-backend.onrender.com';
 axios.defaults.withCredentials = true;
 
 
