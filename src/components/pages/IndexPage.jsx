@@ -18,7 +18,7 @@ export default function IndexPage() {
                 <Link key={place._id} to={'/place/' + place._id}>
                     <div className="bg-gray-500 border-2 mb-2 rounded-2xl flex hover:scale-105">
                         {place.photos?.[0] && (
-                            <img className="rounded-2xl object-cover aspect-square" src={'http://localhost:5001/uploads/' + place.photos?.[0]} alt="" />
+                            <img className="rounded-2xl object-cover aspect-square" src={'https://concertplace-backend.onrender.com/uploads/' + place.photos?.[0]} alt="" />
                         )}
 
                     </div>
