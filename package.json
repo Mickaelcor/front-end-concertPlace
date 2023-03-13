@@ -1,6 +1,7 @@
 {
   "name": "projetperso",
   "version": "0.1.0",
+  "proxy": "https://concertplace-backend.onrender.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
