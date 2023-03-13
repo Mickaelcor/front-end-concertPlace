@@ -19,7 +19,7 @@ export default function PlaceGallery({ place }) {
                     </div>
                     {place?.photos?.length > 0 && place.photos.map(photo => (
                         <div>
-                            <img src={'http://localhost:5001/uploads/' + photo} alt="" />
+                            <img src={'https://concertplace-backend.onrender.com/uploads/' + photo} alt="" />
                         </div>
                     ))}
                 </div>
@@ -33,17 +33,17 @@ export default function PlaceGallery({ place }) {
                 <div>
                     {place.photos?.[0] && (
                         <div>
-                            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover rounded-tl-3xl rounded-bl-3xl" src={'http://localhost:5001/uploads/' + place.photos[0]} alt="" />  {/*on récupere la main photo avec +place.photos[0]*/}
+                            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover rounded-tl-3xl rounded-bl-3xl" src={'https://concertplace-backend.onrender.com/uploads/' + place.photos[0]} alt="" />  {/*on récupere la main photo avec +place.photos[0]*/}
                         </div>
                     )}
                 </div>
                 <div className="grid 2xl:grid-cols-[500px]">
                     {place.photos?.[1] && (
-                        <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover rounded-tr-3xl overflow-hidden" src={'http://localhost:5001/uploads/' + place.photos[1]} alt="" />
+                        <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover rounded-tr-3xl overflow-hidden" src={'https://concertplace-backend.onrender.com/uploads/' + place.photos[1]} alt="" />
                     )}
                     <div className="overflow-hidden">
                         {place.photos?.[2] && (
-                            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer rounded-br-3xl object-cover relative top-2 2xl:bottom-1" src={'http://localhost:5001/uploads/' + place.photos[2]} alt="" />
+                            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer rounded-br-3xl object-cover relative top-2 2xl:bottom-1" src={'https://concertplace-backend.onrender.com/uploads/' + place.photos[2]} alt="" />
                         )}
                     </div>
                 </div>

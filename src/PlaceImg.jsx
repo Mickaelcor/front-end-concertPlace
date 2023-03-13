@@ -6,6 +6,6 @@ export default function PlaceImg({ place, index = 0, className = null }) {
         className = 'object-cover';
     }
     return (
-        <img className={className} src={'http://localhost:5001/uploads/' + place.photos[index]} alt="" />
+        <img className={className} src={'https://concertplace-backend.onrender.com/uploads/' + place.photos[index]} alt="" />
     );
 }
