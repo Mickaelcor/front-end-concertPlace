@@ -12,10 +12,11 @@ export function UserContextProvider({ children }) {
     // On fait un useEffect pour garder le context lors d'un reload
     useEffect(() => {
         if (!user) {
-            axios.get('/profile').then(({ data }) => {
-                setUser(data);
-                setReady(true);
-            });
+            axios.get('/profile', { timeout: 5000 })
+                .then(({ data }) => {
+                    setUser(data);
+                    setReady(true);
+                });
         }
     }, []);
     return (
