@@ -12,7 +12,7 @@ export function UserContextProvider({ children }) {
     // On fait un useEffect pour garder le context lors d'un reload
     useEffect(() => {
         if (!user) {
-            axios.get('https://concertplace-backend.onrender.com/profile').then(({ data }) => {
+            axios.get('/profile').then(({ data }) => {
                 setUser(data);
                 setReady(true);
             });
