@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <header className='flex justify-between'>
             <Logo />
-            <div className='flex gap-2 border-2 border-black rounded-full py-2 px-4 shadow-md shadow-gray-300 max-sm:invisible'>
+            <div className='flex gap-2 border-2 border-black rounded-full py-2 px-4 shadow-md shadow-gray-300 max-sm:hidden'>
                 <div className="font-semibold">N'importe où</div>
                 <div className='border-l border-gray-300'></div>
                 <div className="font-semibold">Ce mois</div>
